@@ -1,0 +1,16 @@
+HAMMER Filesystem port to Linux
+===============================
+
+Daniel Lorch <dlorch@gmail.com>
+
+Installation: make && insmod hammer.ko
+
+Do not use on a production system. Unimplemented functions intentionally
+cause a kernel panic.
+
+Conventions:
+- Linux-specific functions prefixed with 'hammerfs_'
+- DragonFly BSD files copied verbatim to dfly/
+- wrapper definitions in dfly_wrap.[ch]
+
+Continue Daniel Lorch's great start.... This is not updated with the current DBSD Hammer code. This is Daniel Lorch's code compiling on recent gcc and linux kernel headers etc...
